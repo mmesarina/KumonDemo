@@ -28,23 +28,31 @@
 		DC2DEC1D18C3783800F06A88 /* B46ChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC2DEC1B18C3783800F06A88 /* B46ChildViewController.xib */; };
 		DC3A624118C55FB600202BFB /* CheckMarksSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3A624018C55FB600202BFB /* CheckMarksSingleton.m */; };
 		DC3A629118C75BA600202BFB /* ScoreHeadsAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629018C75BA600202BFB /* ScoreHeadsAssets.xcassets */; };
-		DC3A62A218C77CC000202BFB /* AlmostRight_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629318C77CBF00202BFB /* AlmostRight_Anya.m4a */; };
-		DC3A62A318C77CC000202BFB /* Amazing_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629418C77CBF00202BFB /* Amazing_Anya.m4a */; };
-		DC3A62A418C77CC000202BFB /* Awesome_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629518C77CBF00202BFB /* Awesome_Avik.m4a */; };
-		DC3A62A518C77CC000202BFB /* DontGiveUp_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629618C77CBF00202BFB /* DontGiveUp_Avik.m4a */; };
-		DC3A62A618C77CC000202BFB /* GoodJob_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629718C77CBF00202BFB /* GoodJob_Anya.m4a */; };
-		DC3A62A718C77CC000202BFB /* GoodJob_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629818C77CBF00202BFB /* GoodJob_Avik.m4a */; };
-		DC3A62A818C77CC000202BFB /* Great_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629918C77CBF00202BFB /* Great_Avik.m4a */; };
-		DC3A62A918C77CC000202BFB /* Incorrect_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629A18C77CBF00202BFB /* Incorrect_Anya.m4a */; };
-		DC3A62AA18C77CC000202BFB /* NiceTry_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629B18C77CBF00202BFB /* NiceTry_Avik.m4a */; };
-		DC3A62AB18C77CC000202BFB /* NotQuite_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629C18C77CBF00202BFB /* NotQuite_Anya.m4a */; };
-		DC3A62AC18C77CC000202BFB /* Superb_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629D18C77CBF00202BFB /* Superb_Avik.m4a */; };
-		DC3A62AD18C77CC000202BFB /* Terrific_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629E18C77CBF00202BFB /* Terrific_Anya.m4a */; };
-		DC3A62AE18C77CC000202BFB /* UhOh_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629F18C77CBF00202BFB /* UhOh_Anya.m4a */; };
-		DC3A62AF18C77CC000202BFB /* UhOh_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62A018C77CC000202BFB /* UhOh_Avik.m4a */; };
-		DC3A62B018C77CC000202BFB /* Wonderful_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62A118C77CC000202BFB /* Wonderful_Anya.m4a */; };
 		DC3A62B218C7940A00202BFB /* LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62B118C7940A00202BFB /* LoginAssets.xcassets */; };
 		DC3A62B418C7A4C900202BFB /* LevelClearedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3A62B318C7A4C900202BFB /* LevelClearedViewController.m */; };
+		DC3A62D418C7C4A400202BFB /* Amazing_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62D318C7C4A400202BFB /* Amazing_Anya.m4a */; };
+		DC3A62D618C7C5B200202BFB /* AlmostRight_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62D518C7C5B200202BFB /* AlmostRight_Anya.m4a */; };
+		DC3A62E418C7C5C700202BFB /* Awesome_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62D718C7C5C600202BFB /* Awesome_Avik.m4a */; };
+		DC3A62E518C7C5C700202BFB /* DontGiveUp_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62D818C7C5C700202BFB /* DontGiveUp_Avik.m4a */; };
+		DC3A62E618C7C5C700202BFB /* GoodJob_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62D918C7C5C700202BFB /* GoodJob_Anya.m4a */; };
+		DC3A62E718C7C5C700202BFB /* GoodJob_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62DA18C7C5C700202BFB /* GoodJob_Avik.m4a */; };
+		DC3A62E818C7C5C700202BFB /* Great_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62DB18C7C5C700202BFB /* Great_Avik.m4a */; };
+		DC3A62E918C7C5C700202BFB /* Incorrect_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62DC18C7C5C700202BFB /* Incorrect_Anya.m4a */; };
+		DC3A62EA18C7C5C700202BFB /* NiceTry_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62DD18C7C5C700202BFB /* NiceTry_Avik.m4a */; };
+		DC3A62EB18C7C5C700202BFB /* NotQuite_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62DE18C7C5C700202BFB /* NotQuite_Anya.m4a */; };
+		DC3A62EC18C7C5C700202BFB /* Superb_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62DF18C7C5C700202BFB /* Superb_Avik.m4a */; };
+		DC3A62ED18C7C5C700202BFB /* Terrific_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62E018C7C5C700202BFB /* Terrific_Anya.m4a */; };
+		DC3A62EE18C7C5C700202BFB /* UhOh_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62E118C7C5C700202BFB /* UhOh_Anya.m4a */; };
+		DC3A62EF18C7C5C700202BFB /* UhOh_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62E218C7C5C700202BFB /* UhOh_Avik.m4a */; };
+		DC3A62F018C7C5C700202BFB /* Wonderful_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62E318C7C5C700202BFB /* Wonderful_Anya.m4a */; };
+		DC3A630318C7CD0F00202BFB /* Almost Right Keya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62FD18C7CD0F00202BFB /* Almost Right Keya.m4a */; };
+		DC3A630418C7CD0F00202BFB /* Are You Sure Keya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62FE18C7CD0F00202BFB /* Are You Sure Keya.m4a */; };
+		DC3A630518C7CD0F00202BFB /* Brilliant Keya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62FF18C7CD0F00202BFB /* Brilliant Keya.m4a */; };
+		DC3A630618C7CD0F00202BFB /* Try Again Keya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A630018C7CD0F00202BFB /* Try Again Keya.m4a */; };
+		DC3A630718C7CD0F00202BFB /* Uh Oh Keya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A630118C7CD0F00202BFB /* Uh Oh Keya.m4a */; };
+		DC3A630818C7CD0F00202BFB /* Yay!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A630218C7CD0F00202BFB /* Yay!.m4a */; };
+		DC3A631318C7D67F00202BFB /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3A631118C7D67F00202BFB /* InformationViewController.m */; };
+		DC3A631418C7D67F00202BFB /* InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC3A631218C7D67F00202BFB /* InformationViewController.xib */; };
 		DC3F934018BADA2700744D17 /* info_20x20.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3F933F18BADA2700744D17 /* info_20x20.png */; };
 		DC3F934218BAE1F000744D17 /* AssignmentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC3F934118BAE1F000744D17 /* AssignmentHeaderView.xib */; };
 		DC5AD06C18C09C78002493BD /* LevelClearedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5AD06A18C09C78002493BD /* LevelClearedViewController.xib */; };
@@ -117,23 +125,32 @@
 		DC3A623F18C55FB600202BFB /* CheckMarksSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckMarksSingleton.h; sourceTree = "<group>"; };
 		DC3A624018C55FB600202BFB /* CheckMarksSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckMarksSingleton.m; sourceTree = "<group>"; };
 		DC3A629018C75BA600202BFB /* ScoreHeadsAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ScoreHeadsAssets.xcassets; sourceTree = "<group>"; };
-		DC3A629318C77CBF00202BFB /* AlmostRight_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = AlmostRight_Anya.m4a; sourceTree = "<group>"; };
-		DC3A629418C77CBF00202BFB /* Amazing_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amazing_Anya.m4a; sourceTree = "<group>"; };
-		DC3A629518C77CBF00202BFB /* Awesome_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Awesome_Avik.m4a; sourceTree = "<group>"; };
-		DC3A629618C77CBF00202BFB /* DontGiveUp_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = DontGiveUp_Avik.m4a; sourceTree = "<group>"; };
-		DC3A629718C77CBF00202BFB /* GoodJob_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = GoodJob_Anya.m4a; sourceTree = "<group>"; };
-		DC3A629818C77CBF00202BFB /* GoodJob_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = GoodJob_Avik.m4a; sourceTree = "<group>"; };
-		DC3A629918C77CBF00202BFB /* Great_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Great_Avik.m4a; sourceTree = "<group>"; };
-		DC3A629A18C77CBF00202BFB /* Incorrect_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Incorrect_Anya.m4a; sourceTree = "<group>"; };
-		DC3A629B18C77CBF00202BFB /* NiceTry_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = NiceTry_Avik.m4a; sourceTree = "<group>"; };
-		DC3A629C18C77CBF00202BFB /* NotQuite_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = NotQuite_Anya.m4a; sourceTree = "<group>"; };
-		DC3A629D18C77CBF00202BFB /* Superb_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Superb_Avik.m4a; sourceTree = "<group>"; };
-		DC3A629E18C77CBF00202BFB /* Terrific_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Terrific_Anya.m4a; sourceTree = "<group>"; };
-		DC3A629F18C77CBF00202BFB /* UhOh_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhOh_Anya.m4a; sourceTree = "<group>"; };
-		DC3A62A018C77CC000202BFB /* UhOh_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhOh_Avik.m4a; sourceTree = "<group>"; };
-		DC3A62A118C77CC000202BFB /* Wonderful_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wonderful_Anya.m4a; sourceTree = "<group>"; };
 		DC3A62B118C7940A00202BFB /* LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LoginAssets.xcassets; sourceTree = "<group>"; };
 		DC3A62B318C7A4C900202BFB /* LevelClearedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelClearedViewController.m; path = KumonApp/LevelClearedViewController.m; sourceTree = "<group>"; };
+		DC3A62D318C7C4A400202BFB /* Amazing_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Amazing_Anya.m4a; path = Sounds/Amazing_Anya.m4a; sourceTree = "<group>"; };
+		DC3A62D518C7C5B200202BFB /* AlmostRight_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = AlmostRight_Anya.m4a; path = Sounds/AlmostRight_Anya.m4a; sourceTree = "<group>"; };
+		DC3A62D718C7C5C600202BFB /* Awesome_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Awesome_Avik.m4a; path = Sounds/Awesome_Avik.m4a; sourceTree = "<group>"; };
+		DC3A62D818C7C5C700202BFB /* DontGiveUp_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = DontGiveUp_Avik.m4a; path = Sounds/DontGiveUp_Avik.m4a; sourceTree = "<group>"; };
+		DC3A62D918C7C5C700202BFB /* GoodJob_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = GoodJob_Anya.m4a; path = Sounds/GoodJob_Anya.m4a; sourceTree = "<group>"; };
+		DC3A62DA18C7C5C700202BFB /* GoodJob_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = GoodJob_Avik.m4a; path = Sounds/GoodJob_Avik.m4a; sourceTree = "<group>"; };
+		DC3A62DB18C7C5C700202BFB /* Great_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Great_Avik.m4a; path = Sounds/Great_Avik.m4a; sourceTree = "<group>"; };
+		DC3A62DC18C7C5C700202BFB /* Incorrect_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Incorrect_Anya.m4a; path = Sounds/Incorrect_Anya.m4a; sourceTree = "<group>"; };
+		DC3A62DD18C7C5C700202BFB /* NiceTry_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = NiceTry_Avik.m4a; path = Sounds/NiceTry_Avik.m4a; sourceTree = "<group>"; };
+		DC3A62DE18C7C5C700202BFB /* NotQuite_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = NotQuite_Anya.m4a; path = Sounds/NotQuite_Anya.m4a; sourceTree = "<group>"; };
+		DC3A62DF18C7C5C700202BFB /* Superb_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Superb_Avik.m4a; path = Sounds/Superb_Avik.m4a; sourceTree = "<group>"; };
+		DC3A62E018C7C5C700202BFB /* Terrific_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Terrific_Anya.m4a; path = Sounds/Terrific_Anya.m4a; sourceTree = "<group>"; };
+		DC3A62E118C7C5C700202BFB /* UhOh_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = UhOh_Anya.m4a; path = Sounds/UhOh_Anya.m4a; sourceTree = "<group>"; };
+		DC3A62E218C7C5C700202BFB /* UhOh_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = UhOh_Avik.m4a; path = Sounds/UhOh_Avik.m4a; sourceTree = "<group>"; };
+		DC3A62E318C7C5C700202BFB /* Wonderful_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Wonderful_Anya.m4a; path = Sounds/Wonderful_Anya.m4a; sourceTree = "<group>"; };
+		DC3A62FD18C7CD0F00202BFB /* Almost Right Keya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Almost Right Keya.m4a"; path = "Sounds/Almost Right Keya.m4a"; sourceTree = "<group>"; };
+		DC3A62FE18C7CD0F00202BFB /* Are You Sure Keya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Are You Sure Keya.m4a"; path = "Sounds/Are You Sure Keya.m4a"; sourceTree = "<group>"; };
+		DC3A62FF18C7CD0F00202BFB /* Brilliant Keya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Brilliant Keya.m4a"; path = "Sounds/Brilliant Keya.m4a"; sourceTree = "<group>"; };
+		DC3A630018C7CD0F00202BFB /* Try Again Keya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Try Again Keya.m4a"; path = "Sounds/Try Again Keya.m4a"; sourceTree = "<group>"; };
+		DC3A630118C7CD0F00202BFB /* Uh Oh Keya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Uh Oh Keya.m4a"; path = "Sounds/Uh Oh Keya.m4a"; sourceTree = "<group>"; };
+		DC3A630218C7CD0F00202BFB /* Yay!.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Yay!.m4a"; path = "Sounds/Yay!.m4a"; sourceTree = "<group>"; };
+		DC3A631018C7D67F00202BFB /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InformationViewController.h; path = KumonApp/InformationViewController.h; sourceTree = "<group>"; };
+		DC3A631118C7D67F00202BFB /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InformationViewController.m; path = KumonApp/InformationViewController.m; sourceTree = "<group>"; };
+		DC3A631218C7D67F00202BFB /* InformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InformationViewController.xib; path = KumonApp/InformationViewController.xib; sourceTree = "<group>"; };
 		DC3F933F18BADA2700744D17 /* info_20x20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info_20x20.png; path = KumonApp/info_20x20.png; sourceTree = "<group>"; };
 		DC3F934118BAE1F000744D17 /* AssignmentHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssignmentHeaderView.xib; sourceTree = "<group>"; };
 		DC5AD06718C09BFF002493BD /* LevelClearedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelClearedViewController.h; path = KumonApp/LevelClearedViewController.h; sourceTree = "<group>"; };
@@ -218,34 +235,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC3A629218C77CBF00202BFB /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				DC3A629318C77CBF00202BFB /* AlmostRight_Anya.m4a */,
-				DC3A629418C77CBF00202BFB /* Amazing_Anya.m4a */,
-				DC3A629518C77CBF00202BFB /* Awesome_Avik.m4a */,
-				DC3A629618C77CBF00202BFB /* DontGiveUp_Avik.m4a */,
-				DC3A629718C77CBF00202BFB /* GoodJob_Anya.m4a */,
-				DC3A629818C77CBF00202BFB /* GoodJob_Avik.m4a */,
-				DC3A629918C77CBF00202BFB /* Great_Avik.m4a */,
-				DC3A629A18C77CBF00202BFB /* Incorrect_Anya.m4a */,
-				DC3A629B18C77CBF00202BFB /* NiceTry_Avik.m4a */,
-				DC3A629C18C77CBF00202BFB /* NotQuite_Anya.m4a */,
-				DC3A629D18C77CBF00202BFB /* Superb_Avik.m4a */,
-				DC3A629E18C77CBF00202BFB /* Terrific_Anya.m4a */,
-				DC3A629F18C77CBF00202BFB /* UhOh_Anya.m4a */,
-				DC3A62A018C77CC000202BFB /* UhOh_Avik.m4a */,
-				DC3A62A118C77CC000202BFB /* Wonderful_Anya.m4a */,
-			);
-			path = Sounds;
-			sourceTree = "<group>";
-		};
 		DCFFE5A818A97DB100AAEBA5 = {
 			isa = PBXGroup;
 			children = (
+				DC3A631018C7D67F00202BFB /* InformationViewController.h */,
+				DC3A631118C7D67F00202BFB /* InformationViewController.m */,
+				DC3A631218C7D67F00202BFB /* InformationViewController.xib */,
+				DC3A62FD18C7CD0F00202BFB /* Almost Right Keya.m4a */,
+				DC3A62FE18C7CD0F00202BFB /* Are You Sure Keya.m4a */,
+				DC3A62FF18C7CD0F00202BFB /* Brilliant Keya.m4a */,
+				DC3A630018C7CD0F00202BFB /* Try Again Keya.m4a */,
+				DC3A630118C7CD0F00202BFB /* Uh Oh Keya.m4a */,
+				DC3A630218C7CD0F00202BFB /* Yay!.m4a */,
+				DC3A62D718C7C5C600202BFB /* Awesome_Avik.m4a */,
+				DC3A62D818C7C5C700202BFB /* DontGiveUp_Avik.m4a */,
+				DC3A62D918C7C5C700202BFB /* GoodJob_Anya.m4a */,
+				DC3A62DA18C7C5C700202BFB /* GoodJob_Avik.m4a */,
+				DC3A62DB18C7C5C700202BFB /* Great_Avik.m4a */,
+				DC3A62DC18C7C5C700202BFB /* Incorrect_Anya.m4a */,
+				DC3A62DD18C7C5C700202BFB /* NiceTry_Avik.m4a */,
+				DC3A62DE18C7C5C700202BFB /* NotQuite_Anya.m4a */,
+				DC3A62DF18C7C5C700202BFB /* Superb_Avik.m4a */,
+				DC3A62E018C7C5C700202BFB /* Terrific_Anya.m4a */,
+				DC3A62E118C7C5C700202BFB /* UhOh_Anya.m4a */,
+				DC3A62E218C7C5C700202BFB /* UhOh_Avik.m4a */,
+				DC3A62E318C7C5C700202BFB /* Wonderful_Anya.m4a */,
+				DC3A62D518C7C5B200202BFB /* AlmostRight_Anya.m4a */,
+				DC3A62D318C7C4A400202BFB /* Amazing_Anya.m4a */,
 				DC3A62B318C7A4C900202BFB /* LevelClearedViewController.m */,
 				DC3A62B118C7940A00202BFB /* LoginAssets.xcassets */,
-				DC3A629218C77CBF00202BFB /* Sounds */,
 				DC3A629018C75BA600202BFB /* ScoreHeadsAssets.xcassets */,
 				DCB6CB9D18C433A100E7C557 /* B46ProblemViewController.h */,
 				DC3A623F18C55FB600202BFB /* CheckMarksSingleton.h */,
@@ -446,41 +464,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC3A62AF18C77CC000202BFB /* UhOh_Avik.m4a in Resources */,
-				DC3A62A618C77CC000202BFB /* GoodJob_Anya.m4a in Resources */,
+				DC3A62EF18C7C5C700202BFB /* UhOh_Avik.m4a in Resources */,
+				DC3A631418C7D67F00202BFB /* InformationViewController.xib in Resources */,
+				DC3A62E618C7C5C700202BFB /* GoodJob_Anya.m4a in Resources */,
 				DCB751A518BF84E3007B6E3B /* HeaderView.xib in Resources */,
-				DC3A62AB18C77CC000202BFB /* NotQuite_Anya.m4a in Resources */,
+				DC3A62EB18C7C5C700202BFB /* NotQuite_Anya.m4a in Resources */,
 				DC3A62B218C7940A00202BFB /* LoginAssets.xcassets in Resources */,
 				DCFFE5CD18A97DB100AAEBA5 /* Images.xcassets in Resources */,
 				DCE9B69B18B96A0400C20E6B /* MyCell.xib in Resources */,
 				DC744DEC18BC023900F63739 /* LoginViewController.xib in Resources */,
+				DC3A62EE18C7C5C700202BFB /* UhOh_Anya.m4a in Resources */,
+				DC3A630418C7CD0F00202BFB /* Are You Sure Keya.m4a in Resources */,
+				DC3A62D418C7C4A400202BFB /* Amazing_Anya.m4a in Resources */,
 				DC2DEC1518C374DB00F06A88 /* B47ViewController.xib in Resources */,
-				DC3A62AE18C77CC000202BFB /* UhOh_Anya.m4a in Resources */,
 				DCB6CBA118C433A100E7C557 /* B46ProblemViewController.xib in Resources */,
+				DC3A630318C7CD0F00202BFB /* Almost Right Keya.m4a in Resources */,
 				DC5AD07018C09C8E002493BD /* SettingsViewController.xib in Resources */,
 				DCFFE5BF18A97DB100AAEBA5 /* InfoPlist.strings in Resources */,
+				DC3A62E818C7C5C700202BFB /* Great_Avik.m4a in Resources */,
 				DCB6CB9918C4315600E7C557 /* B46ProblemAssets.xcassets in Resources */,
+				DC3A62D618C7C5B200202BFB /* AlmostRight_Anya.m4a in Resources */,
 				DC3A629118C75BA600202BFB /* ScoreHeadsAssets.xcassets in Resources */,
-				DC3A62A818C77CC000202BFB /* Great_Avik.m4a in Resources */,
 				DCB7518518BEFC3D007B6E3B /* B49ViewController.xib in Resources */,
+				DC3A62ED18C7C5C700202BFB /* Terrific_Anya.m4a in Resources */,
+				DC3A62E918C7C5C700202BFB /* Incorrect_Anya.m4a in Resources */,
 				DC5AD06C18C09C78002493BD /* LevelClearedViewController.xib in Resources */,
+				DC3A62EA18C7C5C700202BFB /* NiceTry_Avik.m4a in Resources */,
 				DCB7518F18BF0C1B007B6E3B /* AssignmentsTableViewController.xib in Resources */,
-				DC3A62A318C77CC000202BFB /* Amazing_Anya.m4a in Resources */,
-				DC3A62AD18C77CC000202BFB /* Terrific_Anya.m4a in Resources */,
-				DC3A62A918C77CC000202BFB /* Incorrect_Anya.m4a in Resources */,
+				DC3A62F018C7C5C700202BFB /* Wonderful_Anya.m4a in Resources */,
+				DC3A630618C7CD0F00202BFB /* Try Again Keya.m4a in Resources */,
 				DC2DEC1D18C3783800F06A88 /* B46ChildViewController.xib in Resources */,
-				DC3A62AA18C77CC000202BFB /* NiceTry_Avik.m4a in Resources */,
-				DC3A62A218C77CC000202BFB /* AlmostRight_Anya.m4a in Resources */,
-				DC3A62B018C77CC000202BFB /* Wonderful_Anya.m4a in Resources */,
+				DC3A630518C7CD0F00202BFB /* Brilliant Keya.m4a in Resources */,
+				DC3A62E518C7C5C700202BFB /* DontGiveUp_Avik.m4a in Resources */,
 				DC3F934218BAE1F000744D17 /* AssignmentHeaderView.xib in Resources */,
-				DC3A62A518C77CC000202BFB /* DontGiveUp_Avik.m4a in Resources */,
+				DC3A630818C7CD0F00202BFB /* Yay!.m4a in Resources */,
 				DCB751A718BF87E1007B6E3B /* AssignmentsAssets.xcassets in Resources */,
+				DC3A62E418C7C5C700202BFB /* Awesome_Avik.m4a in Resources */,
+				DC3A62EC18C7C5C700202BFB /* Superb_Avik.m4a in Resources */,
 				108D5E0918B14E3400F89938 /* kumon.png in Resources */,
-				DC3A62A418C77CC000202BFB /* Awesome_Avik.m4a in Resources */,
-				DC3A62AC18C77CC000202BFB /* Superb_Avik.m4a in Resources */,
+				DC3A62E718C7C5C700202BFB /* GoodJob_Avik.m4a in Resources */,
 				DC3F934018BADA2700744D17 /* info_20x20.png in Resources */,
-				DC3A62A718C77CC000202BFB /* GoodJob_Avik.m4a in Resources */,
 				DC5AD07218C0EA84002493BD /* B46Assets.xcassets in Resources */,
+				DC3A630718C7CD0F00202BFB /* Uh Oh Keya.m4a in Resources */,
 				108D5E0B18B14E7F00F89938 /* kumonFace.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC3A631318C7D67F00202BFB /* InformationViewController.m in Sources */,
 				DC3A62B418C7A4C900202BFB /* LevelClearedViewController.m in Sources */,
 				DCFFE5C518A97DB100AAEBA5 /* AppDelegate.m in Sources */,
 				DCB7518418BEFC3D007B6E3B /* B49ViewController.m in Sources */,

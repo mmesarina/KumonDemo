@@ -10,6 +10,7 @@
 #import "B46PageViewController.h"
 #import "LevelClearedViewController.h"
 #import <Parse/Parse.h>
+#import <AVFoundation/AVFoundation.h>
 
 const NSUInteger _OP_WIDTH = 202;
 const NSUInteger _OP_HEIGHT = 220;
@@ -27,6 +28,11 @@ const NSUInteger FONTSIZE = 48;
 @property (nonatomic, strong) UITextView *resultTextView;
 
 @property (nonatomic, strong) NSMutableString *result;
+
+@property (nonatomic, strong) AVAudioPlayer *soundPlayer;
+
+@property (nonatomic, strong) NSMutableArray *goodSounds;
+@property (nonatomic, strong) NSMutableArray *badSounds;
 
 
 
@@ -54,6 +60,15 @@ const NSUInteger FONTSIZE = 48;
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+	
+	// INITIALIZE SOUNDS
+	
+	self.goodSounds = [[NSMutableArray alloc] init];
+	self.goodSounds = (NSMutableArray*) @[@"Amazing_Anya", @"Awesome_Avik", @"Brilliant Keya", @"GoodJob_Anya", @"GoodJob_Avik", @"Great_Avik", @"Superb_Avik", @"Terrific_Anya", @"Wonderful_Anya", @"Yay!"];
+	
+	self.badSounds = [[NSMutableArray alloc] init];
+	self.badSounds = (NSMutableArray*) @[@"AlmostRight_Anya", @"Are You Sure Keya", @"DontGiveUp_Avik", @"Incorrect_Anya", @"NotQuite_Anya", @"Try Again Keya", @"Uh Oh Keya", @"UhOh_Anya", @"UhOh_Avik"];
+	
 	
 	NSUInteger number = [self.navigationController.viewControllers count];
 	NSLog(@"in B46ProblemViewController VIEWDIDLOAD- number = %d", number);
@@ -131,12 +146,12 @@ const NSUInteger FONTSIZE = 48;
 	
 	// MAP THE OPERATIONS TO THEIR RESPECTIVE NAVIGATION HEADER
 	self.operationsMapToNavbarBackgroundImage = [[NSMutableArray alloc] init];
-	self.operationsMapToNavbarBackgroundImage= (NSMutableArray*) @[@"problem_header_01.png", @"problem_header_02.png", @"problem_header_03.png", @"problem_header_04.png", @"problem_header_05.png", @"problem_header_06.png", @"problem_header_07.png", @"problem_header_08.png", @"problem_header_09. png", @"problem_header_10.png", @"b46_slider_p11.png", @"b46_slider_p12.png", @"b46_slider_p13.png", @"b46_slider_p14.png", @"problem_header_15.png", @"problem_header_16.png", @"problem_header_17.png", @"problem_header_18.png"];
+	self.operationsMapToNavbarBackgroundImage= (NSMutableArray*) @[@"problem_header_01.png", @"problem_header_02.png", @"problem_header_03.png", @"problem_header_04.png", @"problem_header_05.png", @"problem_header_06.png", @"problem_header_07.png", @"problem_header_08.png", @"problem_header_09.png", @"problem_header_10.png", @"problem_header_11.png", @"problem_header_10.png", @"problem_header_13.png", @"problem_header_14.png", @"problem_header_15.png", @"problem_header_16.png", @"problem_header_17.png", @"problem_header_18.png"];
 	
 	
 	// MAP THE CALCULATOR BUTTONS TO THEIR RESPECTIVE IMAGE
 	self.calcButtonsMapToImageArray = [[NSMutableArray alloc] init];
-	self.calcButtonsMapToImageArray = (NSMutableArray*) @[@"problem_button_1.png", @"problem_button_2.png", @"problem_button_3.png", @"problem_button_4.png", @"problem_button_5.png", @"problem_button_6.png", @"problem_button_7.png", @"problem_button_8.png", @"problem_button_9. png", @"problem_button_clear.png", @"problem_button_0.png", @"problem_button_enter.png"];
+	self.calcButtonsMapToImageArray = (NSMutableArray*) @[@"problem_button_1.png", @"problem_button_2.png", @"problem_button_3.png", @"problem_button_4.png", @"problem_button_5.png", @"problem_button_6.png", @"problem_button_7.png", @"problem_button_8.png", @"problem_button_9.png", @"problem_button_clear.png", @"problem_button_0.png", @"problem_button_enter.png"];
 	
 	
 	
@@ -402,6 +417,29 @@ const NSUInteger FONTSIZE = 48;
 			//[singleObj.correctCheckmarksDic setObject:yesOrNo forKey:[NSString stringWithFormat:@"%d", opIndex]];
 			[self.singleObj.correctCheckmarksDic setObject:@"YES" forKey:[NSString stringWithFormat:@"%d", self.opIndex]];
 			
+			//MAKE A GOOD SOUND
+			// Choose sound randomly
+			int soundsCount = [self.goodSounds count];
+			int r = rand() % soundsCount;
+			NSString *soundFileName = self.goodSounds[r];
+			
+			NSString *path = [[NSBundle mainBundle] pathForResource:soundFileName ofType:@"m4a"];
+			NSURL *urlFile = [NSURL fileURLWithPath:path];
+			NSError *error;
+			self.soundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:urlFile error:&error];
+			if (error)
+			{
+				NSLog(@"Error in audioPlayer: %@",[error localizedDescription]);
+			} else {
+				self.soundPlayer.delegate = self;
+				[self.soundPlayer prepareToPlay];
+				[self.soundPlayer play];
+			}
+
+			
+			
+			//END SOUND
+			
 			
 			if ((MYDEBUG == 1)) {
 				
@@ -484,6 +522,27 @@ const NSUInteger FONTSIZE = 48;
 			//Clear result and Play sound to let them try again
 			self.result = [[NSMutableString alloc]initWithString:@""];
 			self.resultTextView.text = @"";
+			
+			//MAKE A GOOD SOUND
+			// Choose sound randomly
+			int soundsCount = [self.badSounds count];
+			int r = rand() % soundsCount;
+			NSString *soundFileName = self.badSounds[r];
+			
+			NSString *path = [[NSBundle mainBundle] pathForResource:soundFileName ofType:@"m4a"];
+			NSURL *urlFile = [NSURL fileURLWithPath:path];
+			NSError *error;
+			self.soundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:urlFile error:&error];
+			if (error)
+			{
+				NSLog(@"Error in audioPlayer: %@",[error localizedDescription]);
+			} else {
+				self.soundPlayer.delegate = self;
+				[self.soundPlayer prepareToPlay];
+				[self.soundPlayer play];
+			}
+			
+
 			
 
 			

@@ -12,6 +12,7 @@
 #import "B49ViewController.h"
 #import "SettingsViewController.h"
 #import "B47ViewController.h"
+#import "InformationViewController.h"
 
 
 #import "MyCell.h"
@@ -403,6 +404,8 @@
 	if (indexPath.row == 3) {
 		B49ViewController *b49ViewController = [[B49ViewController alloc] init];
 		b49ViewController.assignment = @"B49";
+		b49ViewController.studentUserName = self.studentUserName;
+		b49ViewController.studentName = self.studentName;
 		[self.navigationController pushViewController:b49ViewController animated:YES];
 		
 	}
@@ -533,6 +536,15 @@
 - (void)levels_info_button: (UIButton*) sender {
 	
 	NSLog(@"Pressed levels_info_button");
+	
+	/* *b46PageViewController = [[B46PageViewController alloc] init];
+	b46PageViewController.assignment = @"B46";
+	b46PageViewController.studentUserName = self.studentUserName;
+	[self.navigationController pushViewController:b46PageViewController animated:YES];
+	 */
+	
+	InformationViewController *infoVC = [[InformationViewController alloc] init];
+	[self.navigationController pushViewController:infoVC animated:YES];
 }
 
 

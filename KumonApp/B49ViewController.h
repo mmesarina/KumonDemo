@@ -11,5 +11,10 @@
 
 @interface B49ViewController : UIViewController
 @property (strong) AVAudioPlayer * myPlayer;
+//MALENA ADDITION
 @property (nonatomic, strong) NSString *assignment;
+@property (nonatomic, strong) NSString *studentName;
+@property (nonatomic, strong) NSString *studentUserName;
+//END MALENA ADDITION
+
 @end

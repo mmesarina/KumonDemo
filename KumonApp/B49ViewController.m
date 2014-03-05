@@ -194,15 +194,22 @@
 -(void)updateAssignmentsStatusToDone{
     
     
-    AssignmentsTableViewController *assignmentsVC = (AssignmentsTableViewController *)[self presentingViewController];
-    NSString *studentUsername = assignmentsVC.studentUserName;
-    NSString *studentName = assignmentsVC.studentName;
-    NSLog(@"student username is [%@]", studentUsername);
-    NSLog(@"student name is [%@]", studentName);
+    //AssignmentsTableViewController *assignmentsVC = (AssignmentsTableViewController *)[self presentingViewController];
+    
+	/** COMMENTED OUT BY MALENA BC THE PROPERTIES ARE PASSED TO THIS VC BY PARENT */
+	//NSString *studentUsername = assignmentsVC.studentUserName;
+    //NSString *studentName = assignmentsVC.studentName;
+    
+	
+	NSLog(@"student username is [%@]", self.studentUserName);
+    NSLog(@"student name is [%@]", self.studentName);
 
     PFQuery *query = [PFQuery queryWithClassName:@"AssignmentsToUsers"];
-    [query whereKey:@"UserName" equalTo:@"avik"];
-    [query whereKey:@"Assignment" equalTo:@"B49"];
+   
+	//[query whereKey:@"UserName" equalTo:@"avik"];
+	[query whereKey:@"UserName" equalTo:self.studentUserName];
+    
+	[query whereKey:@"Assignment" equalTo:@"B49"];
     
 	
 	/* PIAS CODE THAT HOLDS THE MAIN THREAD */

@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 #import "CheckMarksSingleton.h"
 
 
 
-@interface B46ProblemViewController : UIViewController
+@interface B46ProblemViewController : UIViewController <AVAudioPlayerDelegate>
 
 @property (nonatomic, assign) NSInteger opIndex;
 @property (nonatomic, assign) NSInteger firstNum;

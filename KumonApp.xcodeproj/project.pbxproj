@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		010C8FD247D4461B997DC5B5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8731EEC32584D738E5EFC1D /* libPods.a */; };
+		10290AB218B1E1F0002CFADD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290AB118B1E1F0002CFADD /* AudioToolbox.framework */; };
+		10290AB418B1E1FA002CFADD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290AB318B1E1FA002CFADD /* CFNetwork.framework */; };
+		10290AB618B1E20F002CFADD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290AB518B1E20F002CFADD /* CoreLocation.framework */; };
+		10290AB818B1E21C002CFADD /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290AB718B1E21C002CFADD /* libz.dylib */; };
+		10290ABA18B1E226002CFADD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290AB918B1E226002CFADD /* MobileCoreServices.framework */; };
+		10290ABC18B1E230002CFADD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290ABB18B1E230002CFADD /* QuartzCore.framework */; };
+		10290ABE18B1E23B002CFADD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290ABD18B1E23B002CFADD /* Security.framework */; };
+		10290AC018B1E245002CFADD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290ABF18B1E245002CFADD /* StoreKit.framework */; };
+		10290AC218B1E252002CFADD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10290AC118B1E252002CFADD /* SystemConfiguration.framework */; };
+		103FE7BF18BC3DA3007ABC53 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103FE7BE18BC3DA3007ABC53 /* Parse.framework */; };
+		108D5E0918B14E3400F89938 /* kumon.png in Resources */ = {isa = PBXBuildFile; fileRef = 108D5E0818B14E3400F89938 /* kumon.png */; };
+		108D5E0B18B14E7F00F89938 /* kumonFace.png in Resources */ = {isa = PBXBuildFile; fileRef = 108D5E0A18B14E7F00F89938 /* kumonFace.png */; };
+		DC16802018B7FA8A000BB982 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC16801F18B7FA8A000BB982 /* FacebookSDK.framework */; };
+		DC2DEC1418C374DB00F06A88 /* B47ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2DEC1218C374DB00F06A88 /* B47ViewController.m */; };
+		DC2DEC1518C374DB00F06A88 /* B47ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC2DEC1318C374DB00F06A88 /* B47ViewController.xib */; };
+		DC2DEC1818C377C800F06A88 /* B46PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2DEC1718C377C800F06A88 /* B46PageViewController.m */; };
+		DC2DEC1C18C3783800F06A88 /* B46ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC2DEC1A18C3783800F06A88 /* B46ChildViewController.m */; };
+		DC2DEC1D18C3783800F06A88 /* B46ChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC2DEC1B18C3783800F06A88 /* B46ChildViewController.xib */; };
+		DC3A624118C55FB600202BFB /* CheckMarksSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3A624018C55FB600202BFB /* CheckMarksSingleton.m */; };
+		DC3A629118C75BA600202BFB /* ScoreHeadsAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629018C75BA600202BFB /* ScoreHeadsAssets.xcassets */; };
+		DC3A62A218C77CC000202BFB /* AlmostRight_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629318C77CBF00202BFB /* AlmostRight_Anya.m4a */; };
+		DC3A62A318C77CC000202BFB /* Amazing_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629418C77CBF00202BFB /* Amazing_Anya.m4a */; };
+		DC3A62A418C77CC000202BFB /* Awesome_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629518C77CBF00202BFB /* Awesome_Avik.m4a */; };
+		DC3A62A518C77CC000202BFB /* DontGiveUp_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629618C77CBF00202BFB /* DontGiveUp_Avik.m4a */; };
+		DC3A62A618C77CC000202BFB /* GoodJob_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629718C77CBF00202BFB /* GoodJob_Anya.m4a */; };
+		DC3A62A718C77CC000202BFB /* GoodJob_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629818C77CBF00202BFB /* GoodJob_Avik.m4a */; };
+		DC3A62A818C77CC000202BFB /* Great_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629918C77CBF00202BFB /* Great_Avik.m4a */; };
+		DC3A62A918C77CC000202BFB /* Incorrect_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629A18C77CBF00202BFB /* Incorrect_Anya.m4a */; };
+		DC3A62AA18C77CC000202BFB /* NiceTry_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629B18C77CBF00202BFB /* NiceTry_Avik.m4a */; };
+		DC3A62AB18C77CC000202BFB /* NotQuite_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629C18C77CBF00202BFB /* NotQuite_Anya.m4a */; };
+		DC3A62AC18C77CC000202BFB /* Superb_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629D18C77CBF00202BFB /* Superb_Avik.m4a */; };
+		DC3A62AD18C77CC000202BFB /* Terrific_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629E18C77CBF00202BFB /* Terrific_Anya.m4a */; };
+		DC3A62AE18C77CC000202BFB /* UhOh_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A629F18C77CBF00202BFB /* UhOh_Anya.m4a */; };
+		DC3A62AF18C77CC000202BFB /* UhOh_Avik.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62A018C77CC000202BFB /* UhOh_Avik.m4a */; };
+		DC3A62B018C77CC000202BFB /* Wonderful_Anya.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62A118C77CC000202BFB /* Wonderful_Anya.m4a */; };
+		DC3A62B218C7940A00202BFB /* LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3A62B118C7940A00202BFB /* LoginAssets.xcassets */; };
+		DC3A62B418C7A4C900202BFB /* LevelClearedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3A62B318C7A4C900202BFB /* LevelClearedViewController.m */; };
+		DC3F934018BADA2700744D17 /* info_20x20.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3F933F18BADA2700744D17 /* info_20x20.png */; };
+		DC3F934218BAE1F000744D17 /* AssignmentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC3F934118BAE1F000744D17 /* AssignmentHeaderView.xib */; };
+		DC5AD06C18C09C78002493BD /* LevelClearedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5AD06A18C09C78002493BD /* LevelClearedViewController.xib */; };
+		DC5AD06F18C09C8E002493BD /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5AD06D18C09C8E002493BD /* SettingsViewController.m */; };
+		DC5AD07018C09C8E002493BD /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5AD06E18C09C8E002493BD /* SettingsViewController.xib */; };
+		DC5AD07218C0EA84002493BD /* B46Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5AD07118C0EA84002493BD /* B46Assets.xcassets */; };
+		DC744DEB18BC023900F63739 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC744DE918BC023900F63739 /* LoginViewController.m */; };
+		DC744DEC18BC023900F63739 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC744DEA18BC023900F63739 /* LoginViewController.xib */; };
+		DC744DEE18BC032A00F63739 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC744DED18BC032A00F63739 /* Parse.framework */; };
+		DCB6CB9918C4315600E7C557 /* B46ProblemAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB6CB9818C4315600E7C557 /* B46ProblemAssets.xcassets */; };
+		DCB6CBA018C433A100E7C557 /* B46ProblemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB6CB9E18C433A100E7C557 /* B46ProblemViewController.m */; };
+		DCB6CBA118C433A100E7C557 /* B46ProblemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB6CB9F18C433A100E7C557 /* B46ProblemViewController.xib */; };
+		DCB7518418BEFC3D007B6E3B /* B49ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB7518218BEFC3D007B6E3B /* B49ViewController.m */; };
+		DCB7518518BEFC3D007B6E3B /* B49ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7518318BEFC3D007B6E3B /* B49ViewController.xib */; };
+		DCB7518E18BF0C1B007B6E3B /* AssignmentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB7518C18BF0C1B007B6E3B /* AssignmentsTableViewController.m */; };
+		DCB7518F18BF0C1B007B6E3B /* AssignmentsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB7518D18BF0C1B007B6E3B /* AssignmentsTableViewController.xib */; };
+		DCB751A318BF8183007B6E3B /* AssignmentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB751A218BF8183007B6E3B /* AssignmentHeaderView.m */; };
+		DCB751A518BF84E3007B6E3B /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB751A418BF84E3007B6E3B /* HeaderView.xib */; };
+		DCB751A718BF87E1007B6E3B /* AssignmentsAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB751A618BF87E1007B6E3B /* AssignmentsAssets.xcassets */; };
+		DCE9B69B18B96A0400C20E6B /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCE9B69A18B96A0400C20E6B /* MyCell.xib */; };
+		DCE9B69E18B96A3C00C20E6B /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE9B69D18B96A3C00C20E6B /* MyCell.m */; };
+		DCFFE5B518A97DB100AAEBA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE5B418A97DB100AAEBA5 /* Foundation.framework */; };
+		DCFFE5B718A97DB100AAEBA5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE5B618A97DB100AAEBA5 /* CoreGraphics.framework */; };
+		DCFFE5B918A97DB100AAEBA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE5B818A97DB100AAEBA5 /* UIKit.framework */; };
+		DCFFE5BF18A97DB100AAEBA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFFE5BD18A97DB100AAEBA5 /* InfoPlist.strings */; };
+		DCFFE5C118A97DB100AAEBA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE5C018A97DB100AAEBA5 /* main.m */; };
+		DCFFE5C518A97DB100AAEBA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE5C418A97DB100AAEBA5 /* AppDelegate.m */; };
+		DCFFE5CD18A97DB100AAEBA5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCFFE5CC18A97DB100AAEBA5 /* Images.xcassets */; };
+		DCFFE5D418A97DB100AAEBA5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE5D318A97DB100AAEBA5 /* XCTest.framework */; };
+		DCFFE5D518A97DB100AAEBA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE5B418A97DB100AAEBA5 /* Foundation.framework */; };
+		DCFFE5D618A97DB100AAEBA5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE5B818A97DB100AAEBA5 /* UIKit.framework */; };
+		DCFFE5DE18A97DB100AAEBA5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFFE5DC18A97DB100AAEBA5 /* InfoPlist.strings */; };
+		DCFFE5E018A97DB100AAEBA5 /* KumonAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE5DF18A97DB100AAEBA5 /* KumonAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCFFE5D718A97DB100AAEBA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCFFE5A918A97DB100AAEBA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCFFE5B018A97DB100AAEBA5;
+			remoteInfo = KumonApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10290AB118B1E1F0002CFADD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		10290AB318B1E1FA002CFADD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		10290AB518B1E20F002CFADD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		10290AB718B1E21C002CFADD /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		10290AB918B1E226002CFADD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		10290ABB18B1E230002CFADD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		10290ABD18B1E23B002CFADD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		10290ABF18B1E245002CFADD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		10290AC118B1E252002CFADD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		103FE7BE18BC3DA3007ABC53 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		108D5E0818B14E3400F89938 /* kumon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kumon.png; sourceTree = "<group>"; };
+		108D5E0A18B14E7F00F89938 /* kumonFace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kumonFace.png; sourceTree = "<group>"; };
+		C5C6291089EA4BD284615C1F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D8731EEC32584D738E5EFC1D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC16801F18B7FA8A000BB982 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		DC2DEC1118C374DB00F06A88 /* B47ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = B47ViewController.h; path = KumonApp/B47ViewController.h; sourceTree = "<group>"; };
+		DC2DEC1218C374DB00F06A88 /* B47ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = B47ViewController.m; path = KumonApp/B47ViewController.m; sourceTree = "<group>"; };
+		DC2DEC1318C374DB00F06A88 /* B47ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = B47ViewController.xib; path = KumonApp/B47ViewController.xib; sourceTree = "<group>"; };
+		DC2DEC1618C377C800F06A88 /* B46PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = B46PageViewController.h; sourceTree = "<group>"; };
+		DC2DEC1718C377C800F06A88 /* B46PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = B46PageViewController.m; sourceTree = "<group>"; };
+		DC2DEC1918C3783800F06A88 /* B46ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = B46ChildViewController.h; sourceTree = "<group>"; };
+		DC2DEC1A18C3783800F06A88 /* B46ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = B46ChildViewController.m; sourceTree = "<group>"; };
+		DC2DEC1B18C3783800F06A88 /* B46ChildViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = B46ChildViewController.xib; sourceTree = "<group>"; };
+		DC3A623F18C55FB600202BFB /* CheckMarksSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckMarksSingleton.h; sourceTree = "<group>"; };
+		DC3A624018C55FB600202BFB /* CheckMarksSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckMarksSingleton.m; sourceTree = "<group>"; };
+		DC3A629018C75BA600202BFB /* ScoreHeadsAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ScoreHeadsAssets.xcassets; sourceTree = "<group>"; };
+		DC3A629318C77CBF00202BFB /* AlmostRight_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = AlmostRight_Anya.m4a; sourceTree = "<group>"; };
+		DC3A629418C77CBF00202BFB /* Amazing_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Amazing_Anya.m4a; sourceTree = "<group>"; };
+		DC3A629518C77CBF00202BFB /* Awesome_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Awesome_Avik.m4a; sourceTree = "<group>"; };
+		DC3A629618C77CBF00202BFB /* DontGiveUp_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = DontGiveUp_Avik.m4a; sourceTree = "<group>"; };
+		DC3A629718C77CBF00202BFB /* GoodJob_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = GoodJob_Anya.m4a; sourceTree = "<group>"; };
+		DC3A629818C77CBF00202BFB /* GoodJob_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = GoodJob_Avik.m4a; sourceTree = "<group>"; };
+		DC3A629918C77CBF00202BFB /* Great_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Great_Avik.m4a; sourceTree = "<group>"; };
+		DC3A629A18C77CBF00202BFB /* Incorrect_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Incorrect_Anya.m4a; sourceTree = "<group>"; };
+		DC3A629B18C77CBF00202BFB /* NiceTry_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = NiceTry_Avik.m4a; sourceTree = "<group>"; };
+		DC3A629C18C77CBF00202BFB /* NotQuite_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = NotQuite_Anya.m4a; sourceTree = "<group>"; };
+		DC3A629D18C77CBF00202BFB /* Superb_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Superb_Avik.m4a; sourceTree = "<group>"; };
+		DC3A629E18C77CBF00202BFB /* Terrific_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Terrific_Anya.m4a; sourceTree = "<group>"; };
+		DC3A629F18C77CBF00202BFB /* UhOh_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhOh_Anya.m4a; sourceTree = "<group>"; };
+		DC3A62A018C77CC000202BFB /* UhOh_Avik.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = UhOh_Avik.m4a; sourceTree = "<group>"; };
+		DC3A62A118C77CC000202BFB /* Wonderful_Anya.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wonderful_Anya.m4a; sourceTree = "<group>"; };
+		DC3A62B118C7940A00202BFB /* LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LoginAssets.xcassets; sourceTree = "<group>"; };
+		DC3A62B318C7A4C900202BFB /* LevelClearedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelClearedViewController.m; path = KumonApp/LevelClearedViewController.m; sourceTree = "<group>"; };
+		DC3F933F18BADA2700744D17 /* info_20x20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info_20x20.png; path = KumonApp/info_20x20.png; sourceTree = "<group>"; };
+		DC3F934118BAE1F000744D17 /* AssignmentHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssignmentHeaderView.xib; sourceTree = "<group>"; };
+		DC5AD06718C09BFF002493BD /* LevelClearedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelClearedViewController.h; path = KumonApp/LevelClearedViewController.h; sourceTree = "<group>"; };
+		DC5AD06818C09C4B002493BD /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = KumonApp/SettingsViewController.h; sourceTree = "<group>"; };
+		DC5AD06A18C09C78002493BD /* LevelClearedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LevelClearedViewController.xib; path = KumonApp/LevelClearedViewController.xib; sourceTree = "<group>"; };
+		DC5AD06D18C09C8E002493BD /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = KumonApp/SettingsViewController.m; sourceTree = "<group>"; };
+		DC5AD06E18C09C8E002493BD /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = KumonApp/SettingsViewController.xib; sourceTree = "<group>"; };
+		DC5AD07118C0EA84002493BD /* B46Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = B46Assets.xcassets; sourceTree = "<group>"; };
+		DC744DE818BC023900F63739 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		DC744DE918BC023900F63739 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		DC744DEA18BC023900F63739 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = ../LoginViewController.xib; sourceTree = "<group>"; };
+		DC744DED18BC032A00F63739 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DCB6CB9818C4315600E7C557 /* B46ProblemAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = B46ProblemAssets.xcassets; sourceTree = "<group>"; };
+		DCB6CB9D18C433A100E7C557 /* B46ProblemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = B46ProblemViewController.h; sourceTree = "<group>"; };
+		DCB6CB9E18C433A100E7C557 /* B46ProblemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = B46ProblemViewController.m; sourceTree = "<group>"; };
+		DCB6CB9F18C433A100E7C557 /* B46ProblemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = B46ProblemViewController.xib; sourceTree = "<group>"; };
+		DCB7518118BEFC22007B6E3B /* B49ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = B49ViewController.h; path = KumonApp/B49ViewController.h; sourceTree = "<group>"; };
+		DCB7518218BEFC3D007B6E3B /* B49ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = B49ViewController.m; path = KumonApp/B49ViewController.m; sourceTree = "<group>"; };
+		DCB7518318BEFC3D007B6E3B /* B49ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = B49ViewController.xib; path = KumonApp/B49ViewController.xib; sourceTree = "<group>"; };
+		DCB7518B18BF0C1B007B6E3B /* AssignmentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssignmentsTableViewController.h; sourceTree = "<group>"; };
+		DCB7518C18BF0C1B007B6E3B /* AssignmentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssignmentsTableViewController.m; sourceTree = "<group>"; };
+		DCB7518D18BF0C1B007B6E3B /* AssignmentsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssignmentsTableViewController.xib; sourceTree = "<group>"; };
+		DCB751A118BF8183007B6E3B /* AssignmentHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssignmentHeaderView.h; sourceTree = "<group>"; };
+		DCB751A218BF8183007B6E3B /* AssignmentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssignmentHeaderView.m; sourceTree = "<group>"; };
+		DCB751A418BF84E3007B6E3B /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		DCB751A618BF87E1007B6E3B /* AssignmentsAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssignmentsAssets.xcassets; sourceTree = "<group>"; };
+		DCE9B69A18B96A0400C20E6B /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		DCE9B69C18B96A3C00C20E6B /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		DCE9B69D18B96A3C00C20E6B /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		DCFFE5B118A97DB100AAEBA5 /* KumonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KumonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCFFE5B418A97DB100AAEBA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCFFE5B618A97DB100AAEBA5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DCFFE5B818A97DB100AAEBA5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DCFFE5BC18A97DB100AAEBA5 /* KumonApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KumonApp-Info.plist"; sourceTree = "<group>"; };
+		DCFFE5BE18A97DB100AAEBA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCFFE5C018A97DB100AAEBA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCFFE5C218A97DB100AAEBA5 /* KumonApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KumonApp-Prefix.pch"; sourceTree = "<group>"; };
+		DCFFE5C318A97DB100AAEBA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCFFE5C418A97DB100AAEBA5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCFFE5CC18A97DB100AAEBA5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DCFFE5D218A97DB100AAEBA5 /* KumonAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KumonAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCFFE5D318A97DB100AAEBA5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DCFFE5DB18A97DB100AAEBA5 /* KumonAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KumonAppTests-Info.plist"; sourceTree = "<group>"; };
+		DCFFE5DD18A97DB100AAEBA5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCFFE5DF18A97DB100AAEBA5 /* KumonAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KumonAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCFFE5AE18A97DB100AAEBA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10290AC218B1E252002CFADD /* SystemConfiguration.framework in Frameworks */,
+				10290AC018B1E245002CFADD /* StoreKit.framework in Frameworks */,
+				10290ABE18B1E23B002CFADD /* Security.framework in Frameworks */,
+				10290ABC18B1E230002CFADD /* QuartzCore.framework in Frameworks */,
+				DC744DEE18BC032A00F63739 /* Parse.framework in Frameworks */,
+				10290ABA18B1E226002CFADD /* MobileCoreServices.framework in Frameworks */,
+				103FE7BF18BC3DA3007ABC53 /* Parse.framework in Frameworks */,
+				10290AB818B1E21C002CFADD /* libz.dylib in Frameworks */,
+				10290AB618B1E20F002CFADD /* CoreLocation.framework in Frameworks */,
+				DCFFE5B718A97DB100AAEBA5 /* CoreGraphics.framework in Frameworks */,
+				10290AB418B1E1FA002CFADD /* CFNetwork.framework in Frameworks */,
+				10290AB218B1E1F0002CFADD /* AudioToolbox.framework in Frameworks */,
+				DC16802018B7FA8A000BB982 /* FacebookSDK.framework in Frameworks */,
+				DCFFE5B918A97DB100AAEBA5 /* UIKit.framework in Frameworks */,
+				DCFFE5B518A97DB100AAEBA5 /* Foundation.framework in Frameworks */,
+				010C8FD247D4461B997DC5B5 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCFFE5CF18A97DB100AAEBA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCFFE5D418A97DB100AAEBA5 /* XCTest.framework in Frameworks */,
+				DCFFE5D618A97DB100AAEBA5 /* UIKit.framework in Frameworks */,
+				DCFFE5D518A97DB100AAEBA5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC3A629218C77CBF00202BFB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				DC3A629318C77CBF00202BFB /* AlmostRight_Anya.m4a */,
+				DC3A629418C77CBF00202BFB /* Amazing_Anya.m4a */,
+				DC3A629518C77CBF00202BFB /* Awesome_Avik.m4a */,
+				DC3A629618C77CBF00202BFB /* DontGiveUp_Avik.m4a */,
+				DC3A629718C77CBF00202BFB /* GoodJob_Anya.m4a */,
+				DC3A629818C77CBF00202BFB /* GoodJob_Avik.m4a */,
+				DC3A629918C77CBF00202BFB /* Great_Avik.m4a */,
+				DC3A629A18C77CBF00202BFB /* Incorrect_Anya.m4a */,
+				DC3A629B18C77CBF00202BFB /* NiceTry_Avik.m4a */,
+				DC3A629C18C77CBF00202BFB /* NotQuite_Anya.m4a */,
+				DC3A629D18C77CBF00202BFB /* Superb_Avik.m4a */,
+				DC3A629E18C77CBF00202BFB /* Terrific_Anya.m4a */,
+				DC3A629F18C77CBF00202BFB /* UhOh_Anya.m4a */,
+				DC3A62A018C77CC000202BFB /* UhOh_Avik.m4a */,
+				DC3A62A118C77CC000202BFB /* Wonderful_Anya.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		DCFFE5A818A97DB100AAEBA5 = {
+			isa = PBXGroup;
+			children = (
+				DC3A62B318C7A4C900202BFB /* LevelClearedViewController.m */,
+				DC3A62B118C7940A00202BFB /* LoginAssets.xcassets */,
+				DC3A629218C77CBF00202BFB /* Sounds */,
+				DC3A629018C75BA600202BFB /* ScoreHeadsAssets.xcassets */,
+				DCB6CB9D18C433A100E7C557 /* B46ProblemViewController.h */,
+				DC3A623F18C55FB600202BFB /* CheckMarksSingleton.h */,
+				DC3A624018C55FB600202BFB /* CheckMarksSingleton.m */,
+				DCB6CB9E18C433A100E7C557 /* B46ProblemViewController.m */,
+				DCB6CB9F18C433A100E7C557 /* B46ProblemViewController.xib */,
+				DCB6CB9818C4315600E7C557 /* B46ProblemAssets.xcassets */,
+				DC2DEC1918C3783800F06A88 /* B46ChildViewController.h */,
+				DC2DEC1A18C3783800F06A88 /* B46ChildViewController.m */,
+				DC2DEC1B18C3783800F06A88 /* B46ChildViewController.xib */,
+				DC2DEC1618C377C800F06A88 /* B46PageViewController.h */,
+				DC2DEC1718C377C800F06A88 /* B46PageViewController.m */,
+				DC2DEC1118C374DB00F06A88 /* B47ViewController.h */,
+				DC2DEC1218C374DB00F06A88 /* B47ViewController.m */,
+				DC2DEC1318C374DB00F06A88 /* B47ViewController.xib */,
+				DC5AD07118C0EA84002493BD /* B46Assets.xcassets */,
+				DC5AD06D18C09C8E002493BD /* SettingsViewController.m */,
+				DC5AD06E18C09C8E002493BD /* SettingsViewController.xib */,
+				DC5AD06A18C09C78002493BD /* LevelClearedViewController.xib */,
+				DC5AD06818C09C4B002493BD /* SettingsViewController.h */,
+				DC5AD06718C09BFF002493BD /* LevelClearedViewController.h */,
+				DCB751A618BF87E1007B6E3B /* AssignmentsAssets.xcassets */,
+				DCB751A418BF84E3007B6E3B /* HeaderView.xib */,
+				DCB751A118BF8183007B6E3B /* AssignmentHeaderView.h */,
+				DCB751A218BF8183007B6E3B /* AssignmentHeaderView.m */,
+				DCB7518B18BF0C1B007B6E3B /* AssignmentsTableViewController.h */,
+				DCB7518C18BF0C1B007B6E3B /* AssignmentsTableViewController.m */,
+				DCB7518D18BF0C1B007B6E3B /* AssignmentsTableViewController.xib */,
+				DCB7518218BEFC3D007B6E3B /* B49ViewController.m */,
+				DCB7518318BEFC3D007B6E3B /* B49ViewController.xib */,
+				DCB7518118BEFC22007B6E3B /* B49ViewController.h */,
+				103FE7BE18BC3DA3007ABC53 /* Parse.framework */,
+				DC3F933F18BADA2700744D17 /* info_20x20.png */,
+				DCE9B69C18B96A3C00C20E6B /* MyCell.h */,
+				DCE9B69D18B96A3C00C20E6B /* MyCell.m */,
+				DCE9B69A18B96A0400C20E6B /* MyCell.xib */,
+				DCFFE5BA18A97DB100AAEBA5 /* KumonApp */,
+				DCFFE5D918A97DB100AAEBA5 /* KumonAppTests */,
+				DCFFE5B318A97DB100AAEBA5 /* Frameworks */,
+				DCFFE5B218A97DB100AAEBA5 /* Products */,
+				C5C6291089EA4BD284615C1F /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		DCFFE5B218A97DB100AAEBA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCFFE5B118A97DB100AAEBA5 /* KumonApp.app */,
+				DCFFE5D218A97DB100AAEBA5 /* KumonAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCFFE5B318A97DB100AAEBA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC744DED18BC032A00F63739 /* Parse.framework */,
+				DC16801F18B7FA8A000BB982 /* FacebookSDK.framework */,
+				10290AC118B1E252002CFADD /* SystemConfiguration.framework */,
+				10290ABF18B1E245002CFADD /* StoreKit.framework */,
+				10290ABD18B1E23B002CFADD /* Security.framework */,
+				10290ABB18B1E230002CFADD /* QuartzCore.framework */,
+				10290AB918B1E226002CFADD /* MobileCoreServices.framework */,
+				10290AB718B1E21C002CFADD /* libz.dylib */,
+				10290AB518B1E20F002CFADD /* CoreLocation.framework */,
+				10290AB318B1E1FA002CFADD /* CFNetwork.framework */,
+				10290AB118B1E1F0002CFADD /* AudioToolbox.framework */,
+				DCFFE5B418A97DB100AAEBA5 /* Foundation.framework */,
+				DCFFE5B618A97DB100AAEBA5 /* CoreGraphics.framework */,
+				DCFFE5B818A97DB100AAEBA5 /* UIKit.framework */,
+				DCFFE5D318A97DB100AAEBA5 /* XCTest.framework */,
+				D8731EEC32584D738E5EFC1D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCFFE5BA18A97DB100AAEBA5 /* KumonApp */ = {
+			isa = PBXGroup;
+			children = (
+				DC744DE818BC023900F63739 /* LoginViewController.h */,
+				DC744DE918BC023900F63739 /* LoginViewController.m */,
+				DC744DEA18BC023900F63739 /* LoginViewController.xib */,
+				DC3F934118BAE1F000744D17 /* AssignmentHeaderView.xib */,
+				108D5E0A18B14E7F00F89938 /* kumonFace.png */,
+				108D5E0818B14E3400F89938 /* kumon.png */,
+				DCFFE5C318A97DB100AAEBA5 /* AppDelegate.h */,
+				DCFFE5C418A97DB100AAEBA5 /* AppDelegate.m */,
+				DCFFE5CC18A97DB100AAEBA5 /* Images.xcassets */,
+				DCFFE5BB18A97DB100AAEBA5 /* Supporting Files */,
+			);
+			path = KumonApp;
+			sourceTree = "<group>";
+		};
+		DCFFE5BB18A97DB100AAEBA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCFFE5BC18A97DB100AAEBA5 /* KumonApp-Info.plist */,
+				DCFFE5BD18A97DB100AAEBA5 /* InfoPlist.strings */,
+				DCFFE5C018A97DB100AAEBA5 /* main.m */,
+				DCFFE5C218A97DB100AAEBA5 /* KumonApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCFFE5D918A97DB100AAEBA5 /* KumonAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCFFE5DF18A97DB100AAEBA5 /* KumonAppTests.m */,
+				DCFFE5DA18A97DB100AAEBA5 /* Supporting Files */,
+			);
+			path = KumonAppTests;
+			sourceTree = "<group>";
+		};
+		DCFFE5DA18A97DB100AAEBA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCFFE5DB18A97DB100AAEBA5 /* KumonAppTests-Info.plist */,
+				DCFFE5DC18A97DB100AAEBA5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCFFE5B018A97DB100AAEBA5 /* KumonApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCFFE5E318A97DB100AAEBA5 /* Build configuration list for PBXNativeTarget "KumonApp" */;
+			buildPhases = (
+				F833850C59344EAC8720525C /* Check Pods Manifest.lock */,
+				DCFFE5AD18A97DB100AAEBA5 /* Sources */,
+				DCFFE5AE18A97DB100AAEBA5 /* Frameworks */,
+				DCFFE5AF18A97DB100AAEBA5 /* Resources */,
+				36123D6E8861444399B732B3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KumonApp;
+			productName = KumonApp;
+			productReference = DCFFE5B118A97DB100AAEBA5 /* KumonApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCFFE5D118A97DB100AAEBA5 /* KumonAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCFFE5E618A97DB100AAEBA5 /* Build configuration list for PBXNativeTarget "KumonAppTests" */;
+			buildPhases = (
+				DCFFE5CE18A97DB100AAEBA5 /* Sources */,
+				DCFFE5CF18A97DB100AAEBA5 /* Frameworks */,
+				DCFFE5D018A97DB100AAEBA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCFFE5D818A97DB100AAEBA5 /* PBXTargetDependency */,
+			);
+			name = KumonAppTests;
+			productName = KumonAppTests;
+			productReference = DCFFE5D218A97DB100AAEBA5 /* KumonAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCFFE5A918A97DB100AAEBA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "malena mesarina";
+				TargetAttributes = {
+					DCFFE5D118A97DB100AAEBA5 = {
+						TestTargetID = DCFFE5B018A97DB100AAEBA5;
+					};
+				};
+			};
+			buildConfigurationList = DCFFE5AC18A97DB100AAEBA5 /* Build configuration list for PBXProject "KumonApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCFFE5A818A97DB100AAEBA5;
+			productRefGroup = DCFFE5B218A97DB100AAEBA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCFFE5B018A97DB100AAEBA5 /* KumonApp */,
+				DCFFE5D118A97DB100AAEBA5 /* KumonAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCFFE5AF18A97DB100AAEBA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3A62AF18C77CC000202BFB /* UhOh_Avik.m4a in Resources */,
+				DC3A62A618C77CC000202BFB /* GoodJob_Anya.m4a in Resources */,
+				DCB751A518BF84E3007B6E3B /* HeaderView.xib in Resources */,
+				DC3A62AB18C77CC000202BFB /* NotQuite_Anya.m4a in Resources */,
+				DC3A62B218C7940A00202BFB /* LoginAssets.xcassets in Resources */,
+				DCFFE5CD18A97DB100AAEBA5 /* Images.xcassets in Resources */,
+				DCE9B69B18B96A0400C20E6B /* MyCell.xib in Resources */,
+				DC744DEC18BC023900F63739 /* LoginViewController.xib in Resources */,
+				DC2DEC1518C374DB00F06A88 /* B47ViewController.xib in Resources */,
+				DC3A62AE18C77CC000202BFB /* UhOh_Anya.m4a in Resources */,
+				DCB6CBA118C433A100E7C557 /* B46ProblemViewController.xib in Resources */,
+				DC5AD07018C09C8E002493BD /* SettingsViewController.xib in Resources */,
+				DCFFE5BF18A97DB100AAEBA5 /* InfoPlist.strings in Resources */,
+				DCB6CB9918C4315600E7C557 /* B46ProblemAssets.xcassets in Resources */,
+				DC3A629118C75BA600202BFB /* ScoreHeadsAssets.xcassets in Resources */,
+				DC3A62A818C77CC000202BFB /* Great_Avik.m4a in Resources */,
+				DCB7518518BEFC3D007B6E3B /* B49ViewController.xib in Resources */,
+				DC5AD06C18C09C78002493BD /* LevelClearedViewController.xib in Resources */,
+				DCB7518F18BF0C1B007B6E3B /* AssignmentsTableViewController.xib in Resources */,
+				DC3A62A318C77CC000202BFB /* Amazing_Anya.m4a in Resources */,
+				DC3A62AD18C77CC000202BFB /* Terrific_Anya.m4a in Resources */,
+				DC3A62A918C77CC000202BFB /* Incorrect_Anya.m4a in Resources */,
+				DC2DEC1D18C3783800F06A88 /* B46ChildViewController.xib in Resources */,
+				DC3A62AA18C77CC000202BFB /* NiceTry_Avik.m4a in Resources */,
+				DC3A62A218C77CC000202BFB /* AlmostRight_Anya.m4a in Resources */,
+				DC3A62B018C77CC000202BFB /* Wonderful_Anya.m4a in Resources */,
+				DC3F934218BAE1F000744D17 /* AssignmentHeaderView.xib in Resources */,
+				DC3A62A518C77CC000202BFB /* DontGiveUp_Avik.m4a in Resources */,
+				DCB751A718BF87E1007B6E3B /* AssignmentsAssets.xcassets in Resources */,
+				108D5E0918B14E3400F89938 /* kumon.png in Resources */,
+				DC3A62A418C77CC000202BFB /* Awesome_Avik.m4a in Resources */,
+				DC3A62AC18C77CC000202BFB /* Superb_Avik.m4a in Resources */,
+				DC3F934018BADA2700744D17 /* info_20x20.png in Resources */,
+				DC3A62A718C77CC000202BFB /* GoodJob_Avik.m4a in Resources */,
+				DC5AD07218C0EA84002493BD /* B46Assets.xcassets in Resources */,
+				108D5E0B18B14E7F00F89938 /* kumonFace.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCFFE5D018A97DB100AAEBA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCFFE5DE18A97DB100AAEBA5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36123D6E8861444399B732B3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F833850C59344EAC8720525C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCFFE5AD18A97DB100AAEBA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3A62B418C7A4C900202BFB /* LevelClearedViewController.m in Sources */,
+				DCFFE5C518A97DB100AAEBA5 /* AppDelegate.m in Sources */,
+				DCB7518418BEFC3D007B6E3B /* B49ViewController.m in Sources */,
+				DCB6CBA018C433A100E7C557 /* B46ProblemViewController.m in Sources */,
+				DCE9B69E18B96A3C00C20E6B /* MyCell.m in Sources */,
+				DC5AD06F18C09C8E002493BD /* SettingsViewController.m in Sources */,
+				DCFFE5C118A97DB100AAEBA5 /* main.m in Sources */,
+				DC2DEC1818C377C800F06A88 /* B46PageViewController.m in Sources */,
+				DC744DEB18BC023900F63739 /* LoginViewController.m in Sources */,
+				DCB7518E18BF0C1B007B6E3B /* AssignmentsTableViewController.m in Sources */,
+				DC2DEC1418C374DB00F06A88 /* B47ViewController.m in Sources */,
+				DC3A624118C55FB600202BFB /* CheckMarksSingleton.m in Sources */,
+				DC2DEC1C18C3783800F06A88 /* B46ChildViewController.m in Sources */,
+				DCB751A318BF8183007B6E3B /* AssignmentHeaderView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCFFE5CE18A97DB100AAEBA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCFFE5E018A97DB100AAEBA5 /* KumonAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCFFE5D818A97DB100AAEBA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCFFE5B018A97DB100AAEBA5 /* KumonApp */;
+			targetProxy = DCFFE5D718A97DB100AAEBA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCFFE5BD18A97DB100AAEBA5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCFFE5BE18A97DB100AAEBA5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCFFE5DC18A97DB100AAEBA5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCFFE5DD18A97DB100AAEBA5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCFFE5E118A97DB100AAEBA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DCFFE5E218A97DB100AAEBA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCFFE5E418A97DB100AAEBA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C6291089EA4BD284615C1F /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/mmesarina/Documents/CodePath-Class/CodePath-Class-2/KumonProject/Applications/Kumon/KumonApp",
+					"/Users/mmesarina/Documents/CodePath-Class/CodePath-Class-2/KumonProject/Applications/KumonApp",
+					/Pia/ios/KumonFromZip/KumonApp,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KumonApp/KumonApp-Prefix.pch";
+				INFOPLIST_FILE = "KumonApp/KumonApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCFFE5E518A97DB100AAEBA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5C6291089EA4BD284615C1F /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/mmesarina/Documents/CodePath-Class/CodePath-Class-2/KumonProject/Applications/Kumon/KumonApp",
+					"/Users/mmesarina/Documents/CodePath-Class/CodePath-Class-2/KumonProject/Applications/KumonApp",
+					/Pia/ios/KumonFromZip/KumonApp,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KumonApp/KumonApp-Prefix.pch";
+				INFOPLIST_FILE = "KumonApp/KumonApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DCFFE5E718A97DB100AAEBA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KumonApp.app/KumonApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KumonApp/KumonApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KumonAppTests/KumonAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DCFFE5E818A97DB100AAEBA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KumonApp.app/KumonApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KumonApp/KumonApp-Prefix.pch";
+				INFOPLIST_FILE = "KumonAppTests/KumonAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCFFE5AC18A97DB100AAEBA5 /* Build configuration list for PBXProject "KumonApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCFFE5E118A97DB100AAEBA5 /* Debug */,
+				DCFFE5E218A97DB100AAEBA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCFFE5E318A97DB100AAEBA5 /* Build configuration list for PBXNativeTarget "KumonApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCFFE5E418A97DB100AAEBA5 /* Debug */,
+				DCFFE5E518A97DB100AAEBA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCFFE5E618A97DB100AAEBA5 /* Build configuration list for PBXNativeTarget "KumonAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCFFE5E718A97DB100AAEBA5 /* Debug */,
+				DCFFE5E818A97DB100AAEBA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCFFE5A918A97DB100AAEBA5 /* Project object */;
+}

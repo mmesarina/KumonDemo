@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1" customClass="AssignmentHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="146"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Katherine's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4s-du-MOp">
+                    <rect key="frame" x="29" y="7" width="73" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMz-cB-bC2">
+                    <rect key="frame" x="29" y="34" width="36" height="17"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kumon-mm" translatesAutoresizingMaskIntoConstraints="NO" id="rAS-Ma-Mzn">
+                    <rect key="frame" x="88" y="54" width="38" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="38" id="C4H-LU-C2j"/>
+                        <constraint firstAttribute="height" constant="39" id="hXH-iT-OH3"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kumon-mm" translatesAutoresizingMaskIntoConstraints="NO" id="u4i-yN-aLy">
+                    <rect key="frame" x="150" y="54" width="38" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="Had-6m-xmA"/>
+                        <constraint firstAttribute="width" constant="38" id="I65-Qq-YNA"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kumon-mm" translatesAutoresizingMaskIntoConstraints="NO" id="fNC-54-c82">
+                    <rect key="frame" x="211" y="54" width="38" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="19d-cr-HjP"/>
+                        <constraint firstAttribute="width" constant="38" id="lhv-jv-I6D"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kumon-mm" translatesAutoresizingMaskIntoConstraints="NO" id="JE1-QB-b1Z">
+                    <rect key="frame" x="270" y="54" width="38" height="39"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="Qac-Zv-ju0"/>
+                        <constraint firstAttribute="width" constant="38" id="tQ1-Wz-LCi"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="u4i-yN-aLy" firstAttribute="top" secondItem="bMz-cB-bC2" secondAttribute="bottom" constant="3" id="2t0-bN-WVb" userLabel="Vertical Space - (10) - Image View - kumon-mm - Label - score"/>
+                <constraint firstItem="fNC-54-c82" firstAttribute="leading" secondItem="u4i-yN-aLy" secondAttribute="trailing" constant="23" id="8Nm-tx-9tp" userLabel="Horizontal Space - (24) - Image View - kumon-mm - Image View - kumon-mm"/>
+                <constraint firstItem="JE1-QB-b1Z" firstAttribute="top" secondItem="bMz-cB-bC2" secondAttribute="bottom" constant="3" id="CB0-Yb-cjK" userLabel="Vertical Space - (10) - Image View - kumon-mm - Label - score"/>
+                <constraint firstItem="rAS-Ma-Mzn" firstAttribute="top" secondItem="bMz-cB-bC2" secondAttribute="bottom" constant="3" id="F5W-bS-Jsd" userLabel="Vertical Space - (10) - Image View - kumon-mm - Label - score"/>
+                <constraint firstItem="rAS-Ma-Mzn" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="88" id="SKi-1r-vk9" userLabel="Horizontal Space - (83) - Image View - kumon-mm - Assignment Header View"/>
+                <constraint firstItem="bMz-cB-bC2" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="29" id="UGO-bA-tKr"/>
+                <constraint firstItem="fNC-54-c82" firstAttribute="top" secondItem="bMz-cB-bC2" secondAttribute="bottom" constant="3" id="VDU-FH-O2D" userLabel="Vertical Space - (10) - Image View - kumon-mm - Label - score"/>
+                <constraint firstItem="D4s-du-MOp" firstAttribute="top" secondItem="1" secondAttribute="top" constant="7" id="f4j-TG-iY9"/>
+                <constraint firstItem="D4s-du-MOp" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="29" id="jWz-G9-Ech" userLabel="Horizontal Space - (32) - Label - Katherine's - Assignment Header View"/>
+                <constraint firstItem="bMz-cB-bC2" firstAttribute="top" secondItem="D4s-du-MOp" secondAttribute="bottom" constant="10" id="nD7-T9-V6B" userLabel="Vertical Space - (8) - Label - score - Label - Katherine's"/>
+                <constraint firstItem="JE1-QB-b1Z" firstAttribute="leading" secondItem="fNC-54-c82" secondAttribute="trailing" constant="21" id="qk1-Tb-lN8" userLabel="Horizontal Space - (24) - Image View - kumon-mm - Image View - kumon-mm"/>
+                <constraint firstItem="u4i-yN-aLy" firstAttribute="leading" secondItem="rAS-Ma-Mzn" secondAttribute="trailing" constant="24" id="rCs-7N-Lx5"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="score1ImageView" destination="rAS-Ma-Mzn" id="WTe-TV-1YO"/>
+                <outlet property="score2ImageView" destination="u4i-yN-aLy" id="wVu-Ce-EK7"/>
+                <outlet property="score3ImageView" destination="fNC-54-c82" id="2rs-kc-JzB"/>
+                <outlet property="score4ImageView" destination="JE1-QB-b1Z" id="jKp-ZN-FGi"/>
+                <outlet property="scoreLabel" destination="bMz-cB-bC2" id="T0S-te-lTl"/>
+                <outlet property="studentNameLabel" destination="D4s-du-MOp" id="fql-Wh-Nq8"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="kumon-mm" width="28" height="28"/>
+    </resources>
+</document>

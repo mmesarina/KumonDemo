@@ -64,7 +64,7 @@ const NSUInteger FONTSIZE = 48;
 	// INITIALIZE SOUNDS
 	
 	self.goodSounds = [[NSMutableArray alloc] init];
-	self.goodSounds = (NSMutableArray*) @[@"Amazing_Anya", @"Awesome_Avik", @"Brilliant Keya", @"GoodJob_Anya", @"GoodJob_Avik", @"Great_Avik", @"Superb_Avik", @"Terrific_Anya", @"Wonderful_Anya", @"Yay!"];
+	self.goodSounds = (NSMutableArray*) @[@"Amazing_Anya", @"Awesome_Avik", @"Brilliant Keya", @"GoodJob_Anya", @"GoodJob_Avik", @"Great_Avik", @"Superb_Avik", @"Terrific_Anya", @"Wonderful_Anya"];
 	
 	self.badSounds = [[NSMutableArray alloc] init];
 	self.badSounds = (NSMutableArray*) @[@"AlmostRight_Anya", @"Are You Sure Keya", @"DontGiveUp_Avik", @"Incorrect_Anya", @"NotQuite_Anya", @"Try Again Keya", @"Uh Oh Keya", @"UhOh_Anya", @"UhOh_Avik"];
@@ -129,6 +129,7 @@ const NSUInteger FONTSIZE = 48;
 	self.resultTextView = [[UITextView alloc] init];
 	[self.resultTextView setFrame:CGRectMake(x,y,157,74)];
 	self.resultTextView.textAlignment = NSTextAlignmentRight;	self.resultTextView.backgroundColor = [UIColor clearColor];
+	self.resultTextView.editable = NO;
 	[self.view addSubview:self.resultTextView];
 
 	
@@ -305,12 +306,7 @@ const NSUInteger FONTSIZE = 48;
 	
 	NSNumber *Kerning = @16;
 	
-	if (self.result.length >= 3) {
-		// Assume first three are the desired result and disable more entries
-		self.resultTextView.editable = NO;
-	} else {
-		self.resultTextView.editable = YES;
-	}
+	
 	
 	if (index == 0) {
 		

@@ -53,6 +53,7 @@
 		DC3A630818C7CD0F00202BFB /* Yay!.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DC3A630218C7CD0F00202BFB /* Yay!.m4a */; };
 		DC3A631318C7D67F00202BFB /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3A631118C7D67F00202BFB /* InformationViewController.m */; };
 		DC3A631418C7D67F00202BFB /* InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC3A631218C7D67F00202BFB /* InformationViewController.xib */; };
+		DC3A631618C7EA2E00202BFB /* InfoResources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3A631518C7EA2E00202BFB /* InfoResources.xcassets */; };
 		DC3F934018BADA2700744D17 /* info_20x20.png in Resources */ = {isa = PBXBuildFile; fileRef = DC3F933F18BADA2700744D17 /* info_20x20.png */; };
 		DC3F934218BAE1F000744D17 /* AssignmentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC3F934118BAE1F000744D17 /* AssignmentHeaderView.xib */; };
 		DC5AD06C18C09C78002493BD /* LevelClearedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC5AD06A18C09C78002493BD /* LevelClearedViewController.xib */; };
@@ -151,6 +152,7 @@
 		DC3A631018C7D67F00202BFB /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InformationViewController.h; path = KumonApp/InformationViewController.h; sourceTree = "<group>"; };
 		DC3A631118C7D67F00202BFB /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InformationViewController.m; path = KumonApp/InformationViewController.m; sourceTree = "<group>"; };
 		DC3A631218C7D67F00202BFB /* InformationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InformationViewController.xib; path = KumonApp/InformationViewController.xib; sourceTree = "<group>"; };
+		DC3A631518C7EA2E00202BFB /* InfoResources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = InfoResources.xcassets; path = KumonApp/InfoResources.xcassets; sourceTree = "<group>"; };
 		DC3F933F18BADA2700744D17 /* info_20x20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = info_20x20.png; path = KumonApp/info_20x20.png; sourceTree = "<group>"; };
 		DC3F934118BAE1F000744D17 /* AssignmentHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssignmentHeaderView.xib; sourceTree = "<group>"; };
 		DC5AD06718C09BFF002493BD /* LevelClearedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelClearedViewController.h; path = KumonApp/LevelClearedViewController.h; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 		DCFFE5A818A97DB100AAEBA5 = {
 			isa = PBXGroup;
 			children = (
+				DC3A631518C7EA2E00202BFB /* InfoResources.xcassets */,
 				DC3A631018C7D67F00202BFB /* InformationViewController.h */,
 				DC3A631118C7D67F00202BFB /* InformationViewController.m */,
 				DC3A631218C7D67F00202BFB /* InformationViewController.xib */,
@@ -485,6 +488,7 @@
 				DCB6CB9918C4315600E7C557 /* B46ProblemAssets.xcassets in Resources */,
 				DC3A62D618C7C5B200202BFB /* AlmostRight_Anya.m4a in Resources */,
 				DC3A629118C75BA600202BFB /* ScoreHeadsAssets.xcassets in Resources */,
+				DC3A631618C7EA2E00202BFB /* InfoResources.xcassets in Resources */,
 				DCB7518518BEFC3D007B6E3B /* B49ViewController.xib in Resources */,
 				DC3A62ED18C7C5C700202BFB /* Terrific_Anya.m4a in Resources */,
 				DC3A62E918C7C5C700202BFB /* Incorrect_Anya.m4a in Resources */,
